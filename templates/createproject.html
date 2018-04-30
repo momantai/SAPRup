@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevo Proyecto</title>
+    <link rel="stylesheet" href="../css/create.css">
+</head>
+<body>
+    <p id="cabecera">Nuevo Proyecto</p>
+    <div id="title">
+        <p><img src="../images/pencil.png" alt="Pencil"></p>
+        <h1>Crear nuevo proyecto</h1>
+    </div>
+    <div class="box">
+        <form>
+            <label for="titleproject">Nombre de proyecto</label>
+            <input type="text" id="titleproject" name="title-project" placeholder="Nombre del proyecto" required>
+            <label for="descriptionproject">Descripción</label>
+            <input type="text" id="descriptionproject" name="description-project" placeholder="Descripción" required>
+            <label for="versionproject">Versión</label>
+            <input type="text" id="versionproject" name="version-project" placeholder="Versión: 1.0" value="1.0" required>
+            <label for="">Inicio</label>
+            <input type="date" name="time-start" id="">
+            <label for="">Fin</label>
+            <input type="date" name="time-final" id="">
+            <label for="teamproject">Equipo de proyecto</label>
+            <input type="text" id="teamproject" name="team-project" placeholder="Alex, Meli, Armando" required>
+        </form>
+    </div>
+    <div class="btns">
+        <button id="register-project" class="buttons">Crear</button>
+        <button id="exit" class="buttons">Cancelar</button>
+    </div>
+
+    <script src="../js/createproject.js"></script>
+</body>
+</html>

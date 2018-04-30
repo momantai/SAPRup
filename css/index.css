@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Poppins|Rubik');
+body{
+	background-color: #f1f1f1;
+	margin: 0;
+    padding: 0;
+    font-family: "sans-serif";
+    font-size: 81.5%;
+}
+
+/*Area de la barra de titulo*/
+#top {
+    width: 100%;
+    background-color: cornflowerblue;
+    -webkit-app-region: drag;
+    position: fixed;
+    display: block;
+    top:-1px;
+    z-index: 50;
+}
+
+    p.cabecera {
+        display: inline-block;
+        margin:0;
+        padding: 20px;
+        font-family: 'Arial';
+        font-size: 10px;
+        font-weight: bold;
+        text-transform:uppercase;
+        -webkit-app-region: drag;
+        background-color: cornflowerblue;
+        color: #fff;
+    }
+    p.closee {
+        float: right;
+        background-color: rgb(80, 137, 242);
+        -webkit-app-region: no-drag;
+    }
+        p.closee:hover {
+            background-color: rgb(45, 103, 209);
+            cursor: pointer;
+        }
+
+/*Area general del proyecto*/
+#projectbox {
+    position: relative;
+    display: block; 
+    top: 70px;
+}
+
+    .principal{
+        display: flex;
+        z-index: 1;
+        border-radius: 1.5px;
+        width: 700px;
+        margin: 10px auto;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        padding: 10px;
+    }
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+            .head a{
+                font-family: 'sans-serif';
+                font-size: 13px;
+                cursor: pointer;
+                font-weight: bold;
+                max-width: 100%;
+                color: #3367d6;
+            }
+            .titulo a:hover {
+                color: #3367d6;
+            }
+            .descripcion{
+                font-family: sans-serif;
+                color: rgb(117, 117, 117);
+                width: 93%;
+                text-align: justify;
+            }
+            .version, .team{
+                display: inline;
+                float: left;
+                color: #3367d6;
+            }
+            .version {
+                float: right;
+            }
+    .boton{
+        display: inherit;
+        position: fixed;
+        z-index: 4;
+        top: 85%;
+        left: 93%;
+        width: 50px;
+        height: 50px;
+        border-radius: 150px;
+        background-image: url(../images/mas.png);
+        background-color: #f9f9f9;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 25px;
+        /*box-shadow: 0px 0px 1px #888, 1px 2px 5px #888;*/
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2); 
+    }
+    .boton:hover{
+        cursor: pointer;
+        background-color: #d6d5d5;
+    }
+
+/*Menu de opciones*/
+.menus {
+    position: relative;
+    display:inline-block;
+    float: right;
+}
+
+    .btnmenu {
+        float: right;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        margin-left: -5px;
+        margin-top: 16px;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 5;
+    }
+        .menu a {
+            text-decoration: none;
+            font-weight: inherit;
+            padding: 12px 16px;
+            color: #333;
+            display: block;
+        }
+
+        .menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .menus:hover .menu{
+            display: block;
+        }
+  
+  
