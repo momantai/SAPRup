@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Hind|Poppins|Rubik');
-body{
+body, html {
 	background-color: #f1f1f1;
 	margin: 0;
     padding: 0;
+    height: 100vh;
     font-family: "sans-serif";
     font-size: 81.5%;
+    overflow: hidden;
 }
 
 /*Area de la barra de titulo*/
 #top {
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: royalblue;
     -webkit-app-region: drag;
     position: fixed;
     display: block;
@@ -27,7 +29,7 @@ body{
         font-weight: bold;
         text-transform:uppercase;
         -webkit-app-region: drag;
-        background-color: cornflowerblue;
+        background-color: royalblue;
         color: #fff;
     }
     p.closee {
@@ -42,9 +44,12 @@ body{
 
 /*Area general del proyecto*/
 #projectbox {
+    overflow: scroll;
+    height: 90vh;
     position: relative;
     display: block; 
-    top: 70px;
+    top: 50px;
+    padding-top: 20px;
 }
 
     .principal{

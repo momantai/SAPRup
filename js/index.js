@@ -36,6 +36,18 @@ class CRUDProjectInfo {
         connection.query(q, (err, row, col) => {
             if(err) console.log('¡Error al ingresar los datos!')
         });
+
+        idp = 0
+
+        q = 'SELECT idprojectoInfo FROM projectInfo ORDER BY idprojectInfo DESC LIMIT 1'
+        connection.query(q, (err, rows, fields)=> {
+            idp = rows[0].idprojectInfo
+        })
+
+        q = 'INSERT INTO teamproject (namemember, idprojectInfo) VALUES ("'+data.teamp+'", "'+idp+'");';
+        connection.query(q, (err, row, col)=> {
+            if(err) console.log("¡Error al ingresar datos del equipo!")            
+        })
     }
     /*Modificar datos descriptivos.*/
     update(data) {

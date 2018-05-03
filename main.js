@@ -11,7 +11,7 @@ function createWindow() {
         width: 880,
         height: 600,
         resizable: false,
-        frame: false
+        frame: true
     })
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'templates/index.html'),
