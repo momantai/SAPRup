@@ -21,6 +21,8 @@ function createWindow() {
     //win.webContents.openDevTools()
 }
 
+//Este archivo modificado esta en una rama (branch)
+
 
 app.on('ready', createWindow)
 ipc.on('infoProject', (event, args)=>{
