@@ -14,6 +14,6 @@ Instalamos las dependencias y corremos el programa:
 `npm install & start`
 
 
-## Licencia
+## Licencia.
 
 [MIT](https://github.com/momantai/SAPRup/blob/master/LICENSE)
